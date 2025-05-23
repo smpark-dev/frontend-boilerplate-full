@@ -1,0 +1,39 @@
+# 빌드 결과물
+dist/
+build/
+coverage/
+
+# 의존성
+node_modules/
+.yarn/
+.pnp.*
+
+
+# 자동 생성 파일
+*.min.js
+*.min.css
+*.bundle.js
+
+# 설정 파일 (포맷팅하지 않을 것들)
+package-lock.json
+yarn.lock
+.yarn/
+.yarnrc.yml
+.yarn.yml
+
+# 마크다운 및 문서
+*.md
+CHANGELOG.md
+
+# 환경 설정
+.env*
+
+# IDE 설정
+.vscode/
+.idea/
+
+# 로그 파일
+*.log
+
+# 기타 생성 파일
+.tsbuildinfo

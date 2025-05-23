@@ -1,0 +1,29 @@
+# Yarn PnP 활성화
+nodeLinker: pnp
+
+# TypeScript와 ESLint를 위한 설정
+pnpMode: loose
+
+# 에디터 지원을 위한 설정
+pnpEnableInlining: false
+
+# 캐시 정책
+enableGlobalCache: true
+
+# 패키지 매니저 버전 고정 (선택사항)
+packageManager: yarn@4.0.2
+
+# 네트워크 설정
+networkTimeout: 300000
+
+# 로그 레벨
+logLevel: info
+
+# 압축 레벨 (성능 최적화)
+compressionLevel: mixed
+
+# 프로그레스 바 표시
+enableProgressBars: true
+
+# 인터랙티브 모드
+enableInteractiveMode: true

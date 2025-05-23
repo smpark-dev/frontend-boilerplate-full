@@ -1,0 +1,31 @@
+# Yarn PnP 관련
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# 일반적인 무시 파일들
+node_modules/
+dist/
+build/
+*.log
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS 생성 파일
+.DS_Store
+Thumbs.db
+
+# IDE 관련
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 테스트 커버리지
+coverage/

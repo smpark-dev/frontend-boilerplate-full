@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    // === 타겟 환경 (최신 브라우저 + Node.js 호환) ===
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    // === 모듈 해상도 (Yarn PnP + Vite 최적화) ===
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+
+    // === 출력 설정 (Vite가 번들링 담당) ===
+    "noEmit": true,
+    "sourceMap": true,
+
+    // === JSX 설정 (React 17+ 새로운 변환) ===
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+
+    // === 엄격한 타입 체크 ===
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "exactOptionalPropertyTypes": true,
+
+    // === 경로 별칭 (모던 프로젝트 구조) ===
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/pages/*": ["./src/pages/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/store/*": ["./src/store/*"],
+      "@/types/*": ["./src/types/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/assets/*": ["./src/assets/*"]
+    },
+
+    // === 호환성 설정 ===
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+
+    // === 성능 최적화 ===
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo"
+  },
+
+  // === 포함할 파일들 (통합 관리) ===
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "vite.config.ts",
+    "vitest.config.ts",
+    "tailwind.config.js",
+    "postcss.config.js"
+  ],
+
+  // === 제외할 파일들 ===
+  "exclude": ["node_modules", "dist", "build", "coverage", ".yarn"]
+}
