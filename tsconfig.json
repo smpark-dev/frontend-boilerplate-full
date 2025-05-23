@@ -46,11 +46,11 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "useDefineForClassFields": true,
+    "useDefineForClassFields": true
 
     // === 성능 최적화 ===
-    "incremental": true,
-    "tsBuildInfoFile": ".tsbuildinfo"
+    // "incremental": true,
+    // "tsBuildInfoFile": ".tsbuildinfo"
   },
 
   // === 포함할 파일들 (통합 관리) ===

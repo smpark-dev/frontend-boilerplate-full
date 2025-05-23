@@ -16,6 +16,8 @@ build/
 .env.development.local
 .env.test.local
 .env.production.local
+.tsbuildinfo
+*.tsbuildinfo
 
 # OS 생성 파일
 .DS_Store
