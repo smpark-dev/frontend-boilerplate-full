@@ -1,6 +1,7 @@
 # Yarn PnP 관련
 .yarn/*
-!.yarn/cache     # ← 이것만 추가하면 완벽!
+!.yarn/cache
+!.yarn/unplugged
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
