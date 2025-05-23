@@ -2,7 +2,7 @@
 nodeLinker: pnp
 
 # TypeScript와 ESLint를 위한 설정
-pnpMode: loose
+pnpMode: strict
 
 # 에디터 지원을 위한 설정
 pnpEnableInlining: false
