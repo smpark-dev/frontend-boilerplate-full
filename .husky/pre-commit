@@ -1,14 +1,12 @@
+
 # 기존 .husky 폴더 삭제
 rm -rf .husky
 
 # Husky 9.x 방식으로 다시 초기화
-npx husky init
+yarn husky init  # npx → yarn으로 변경 (일관성)
 
-# 간단한 pre-commit 설정 (타입 체크 제외)
-echo '#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-npx lint-staged' > .husky/pre-commit
+# 간단한 pre-commit 설정
+echo 'yarn lint-staged' > .husky/pre-commit  # 중복 제거 및 간소화
 
 # 실행 권한 부여
 chmod +x .husky/pre-commit

@@ -55,11 +55,11 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
+      "yarn eslint --fix",
+      "yarn prettier --write"
     ],
     "*.{json,css,md,html}": [
-      "prettier --write"
+      "yarn prettier --write"
     ]
   }
 }
