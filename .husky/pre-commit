@@ -3,10 +3,10 @@
 rm -rf .husky
 
 # Husky 9.x 방식으로 다시 초기화
-yarn husky init  # npx → yarn으로 변경 (일관성)
+yarn husky init
 
 # 간단한 pre-commit 설정
-echo 'yarn lint-staged' > .husky/pre-commit  # 중복 제거 및 간소화
+echo 'yarn lint-staged' > .husky/pre-commit
 
 # 실행 권한 부여
 chmod +x .husky/pre-commit
