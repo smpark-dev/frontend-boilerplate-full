@@ -54,11 +54,11 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "yarn eslint --fix",
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn eslint --fix --max-warnings=0",
       "yarn prettier --write"
     ],
-    "*.{json,css,md,html}": [
+    "*.{json,css,html,yml,yaml}": [
       "yarn prettier --write"
     ]
   }

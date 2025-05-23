@@ -9,7 +9,7 @@
 !.yarn/versions
 
 # 일반적인 무시 파일들
-node_modules/
+/node_modules/
 dist/
 build/
 *.log

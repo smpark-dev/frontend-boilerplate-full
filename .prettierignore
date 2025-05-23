@@ -37,3 +37,6 @@ CHANGELOG.md
 
 # 기타 생성 파일
 .tsbuildinfo
+
+# Zero Install
+.yarn/unplugged/
